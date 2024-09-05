@@ -26,10 +26,10 @@ export default function CustomInput({
   IconRight,
   IconLeft,
   label,
-  containerStyle
+  containerStyle,
 }: CustomInputProps) {
   const [focused, setFocused] = useState(false);
-  
+
   const onFocus = () => {
     setFocused(!focused);
   };

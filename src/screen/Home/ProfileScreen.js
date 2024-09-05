@@ -7,6 +7,6 @@ const ProfileScreen = () => {
       <Text>profile</Text>
     </View>
   );
-}
+};
 
 export default ProfileScreen;

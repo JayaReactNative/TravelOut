@@ -20,7 +20,7 @@ export default function Button({
   style,
   onPress,
   labelStyle,
-  isLoading
+  isLoading,
 }: ButtonProps) {
   return (
     <TouchableOpacity
@@ -45,7 +45,7 @@ export default function Button({
           {`${label}`.toUpperCase()}
         </Text>
       ) : (
-        <ActivityIndicator size={"large"} color={Colors.white} />
+        <ActivityIndicator size={'large'} color={Colors.white} />
       )}
     </TouchableOpacity>
   );

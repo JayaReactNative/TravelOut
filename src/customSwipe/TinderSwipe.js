@@ -22,7 +22,7 @@ const TinderSwipe = () => {
       image: require('./images/blackpanther.webp'),
       id: 6,
       title: 'Black Panther',
-    }
+    },
   ]);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const TinderSwipe = () => {
           image: require('./images/blackpanther.webp'),
           id: 6,
           title: 'Black Panther',
-        }
+        },
       ]);
     }
   }, [data.length]);

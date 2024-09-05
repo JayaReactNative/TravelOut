@@ -36,7 +36,7 @@ const Home_screen = () => {
       <ScrollView contentContainerStyle={styles.scrollViewContent} showsVerticalScrollIndicator={false}>
         <TinderSwipeDemo />
       </ScrollView>
-     
+
     </SafeAreaView>
   );
 };
@@ -50,14 +50,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 10,
     paddingVertical: 3,
-    alignItems:"center",
+    alignItems:'center',
     backgroundColor: 'white', // Ensure the header has a background if needed
   },
   backIcon: {
     height: 25,
     width: 25,
     resizeMode: 'contain',
-    marginHorizontal:5
+    marginHorizontal:5,
   },
   headingText: {
     fontSize: 25,
@@ -67,8 +67,8 @@ const styles = StyleSheet.create({
     flex: 1, // Ensure text takes available space
   },
   scrollViewContent: {
-    flexGrow: 1, 
-    padding: 20, 
+    flexGrow: 1,
+    padding: 20,
   },
 });
 

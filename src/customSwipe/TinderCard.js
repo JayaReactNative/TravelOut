@@ -56,7 +56,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
     [likeOpacity, rejectOpacity],
   );
 
-  
+
 
   return (
     <Animated.View
@@ -91,7 +91,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
             </View>
             <Image
               source={require('../assets/icons/high_five.png')}
-              style={styles.high_five}></Image>
+              style={styles.high_five} />
           </View>
         </ImageBackground>
 
@@ -122,7 +122,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
                 height: 60,
                 resizeMode: 'contain',
                 marginRight: 7,
-              }}></Image>
+              }} />
             <View>
               <Text style={[styles.cardText, {fontSize: 18}]}>
                 The Adventourist
@@ -274,7 +274,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
                 height: 60,
                 resizeMode: 'contain',
                 marginRight: 17,
-              }}></Image>
+              }} />
             <View>
               <Text style={[styles.descriptionText, {color: 'grey'}]}>
                 I want to travel to
@@ -297,7 +297,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
                 height: 60,
                 resizeMode: 'contain',
                 marginRight: 17,
-              }}></Image>
+              }} />
             <View>
               <Text style={[styles.descriptionText, {color: 'grey'}]}>
                 Trip date{' '}
@@ -321,7 +321,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
                 height: 60,
                 resizeMode: 'contain',
                 marginRight: 17,
-              }}></Image>
+              }} />
             <View>
               <Text style={[styles.descriptionText, {color: 'grey'}]}>
                 My budget
@@ -415,7 +415,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
           </View>
 
           <Text style={styles.cardText}>My Instagram</Text>
-        
+
 
 <View style={styles.imageGroup}>
       <View>
@@ -546,7 +546,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
               </Text>
             </TouchableOpacity>
           </View>
-          
+
         </View>
       </ScrollView>
     </Animated.View>
@@ -607,7 +607,7 @@ const styles = StyleSheet.create({
   },
   iconRow: {
     width: '100%',
-    flexWrap: 'wrap', 
+    flexWrap: 'wrap',
     flexDirection: 'row',
     alignSelf: 'flex-start',
     marginHorizontal: 'auto',
@@ -693,18 +693,18 @@ const styles = StyleSheet.create({
   },
 
   imageLongInsta: {
-    width: Platform.select({ ios: 100, android: 115 }), 
-    height: Platform.select({ ios: 170, android: 170 }), 
+    width: Platform.select({ ios: 100, android: 115 }),
+    height: Platform.select({ ios: 170, android: 170 }),
     resizeMode: 'cover',
     borderRadius: 10,
-    marginVertical: 5
+    marginVertical: 5,
   },
-  
+
   imageSmallInsta: {
-    width: Platform.select({ ios: 110, android: 120 }), 
-    height: Platform.select({ ios: 80, android: 80 }), 
+    width: Platform.select({ ios: 110, android: 120 }),
+    height: Platform.select({ ios: 80, android: 80 }),
     borderRadius: 10,
-    marginVertical: 5
+    marginVertical: 5,
   },
 });
 

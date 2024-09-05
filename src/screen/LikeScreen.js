@@ -7,6 +7,6 @@ const LikeScreen = () => {
       <Text>Hello</Text>
     </View>
   );
-}
+};
 
 export default LikeScreen;

@@ -51,7 +51,7 @@ const TinderSwipeDemo = () => {
       age: '32',
       personality: 'Film Producer and Actress',
       distance: '10 km away',
-    }, 
+    },
   ]);
 
 
@@ -97,7 +97,7 @@ const TinderSwipeDemo = () => {
             age: '32',
             personality: 'Film Producer and Actress',
             distance: '10 km away',
-          },     
+          },
       ]);
     }
   }, [data]);
@@ -108,10 +108,10 @@ const TinderSwipeDemo = () => {
     // onMoveShouldSetPanResponder: () => true,
     onMoveShouldSetPanResponder: (_, gestureState) => {
       // Allow PanResponder only if horizontal movement is larger than vertical
-      if( (Math.abs(gestureState.dx) > Math.abs(gestureState.dy * 3) ) &&(Math.abs(gestureState.vx) > Math.abs(gestureState.vy * 3) )) {
-        return true
+      if( (Math.abs(gestureState.dx) > Math.abs(gestureState.dy * 3) ) && (Math.abs(gestureState.vx) > Math.abs(gestureState.vy * 3) )) {
+        return true;
       } else {
-        return false
+        return false;
       }
     },
     onPanResponderMove: (_, {dx, dy}) => {
@@ -143,7 +143,7 @@ const TinderSwipeDemo = () => {
     swipe.setValue({x: 0, y: 0});
   }, [swipe]);
 
-   
+
   return (
     <>
       {data

@@ -28,9 +28,9 @@ const DashBoard = () => {
           return <Image source={iconName} style={{ width: 50, height: 50 }} />;
         },
         tabBarLabel: () => null,
-        tabBarStyle: { 
-          paddingVertical: 10, 
-          paddingBottom: 10, 
+        tabBarStyle: {
+          paddingVertical: 10,
+          paddingBottom: 10,
         },
         headerShown: false,
       })}

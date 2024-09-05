@@ -7,6 +7,6 @@ const ChatsScreen = () => {
       <Text>ChatsScreen</Text>
     </View>
   );
-}
+};
 
 export default ChatsScreen;

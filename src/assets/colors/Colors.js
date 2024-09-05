@@ -1,12 +1,12 @@
-export const Colors ={
-    White:"#fff",
+export const Colors = {
+    White:'#fff',
     SkyBlue:'skyblue',
-    Green:"green",
+    Green:'green',
     Red:'red',
-    Pink:"pink",
+    Pink:'pink',
     Violet:'violet',
-    DarkBlue:"blue",
+    DarkBlue:'blue',
     Black:'black',
     Grey:'lightgrey',
-    Orange:"#FF7622"
-}
+    Orange:'#FF7622',
+};
