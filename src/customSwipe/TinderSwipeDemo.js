@@ -8,6 +8,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import React, {useCallback, useEffect, useRef, useState} from 'react';
+import HomePageItem from '../screen/HomeScreen/HomePageItem';
 import TinderCard from './TinderCard';
 
 const TinderSwipeDemo = () => {
@@ -114,6 +115,7 @@ const TinderSwipeDemo = () => {
         return false;
       }
     },
+
     onPanResponderMove: (_, {dx, dy}) => {
       console.log('dx:' + dx + ' dy:' + dy);
       swipe.setValue({x: dx, y: 0});
@@ -138,6 +140,7 @@ const TinderSwipeDemo = () => {
       }
     },
   });
+
   const removeCard = useCallback(() => {
     setData(prepState => prepState.slice(1));
     swipe.setValue({x: 0, y: 0});
@@ -158,11 +161,6 @@ const TinderSwipeDemo = () => {
               swipe={swipe}
               {...dragHanlders}
             >
-              {/* <Image
-                style={styles.fullImage}
-                source={item.image}
-                resizeMode="cover"
-              /> */}
             </TinderCard>
           );
         })

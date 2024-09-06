@@ -24,6 +24,7 @@ import {
 const {height, width} = Dimensions.get('window');
 
 const TinderCard = ({item, isFirst, swipe, ...rest}) => {
+
   const rotate = swipe.x.interpolate({
     inputRange: [-100, 0, 100],
     outputRange: ['-8deg', '0deg', '8deg'],
@@ -40,6 +41,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
     outputRange: [1, 0],
     extrapolate: 'clamp',
   });
+  
 
   const renderChoice = useCallback(
     () => (

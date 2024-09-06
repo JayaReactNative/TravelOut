@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
 import Home_screen from '../screen/Home/Home_screen';
 import { POPPINS_REGULAR } from '../constant/Fonts';
-import LikeScreen from '../screen/LikeScreen';
+import LikeScreen from '../screen/Home/LikeScreen';
 import ChatsScreen from '../screen/Home/ChatsScreen';
 import ProfileScreen from '../screen/Home/ProfileScreen';
 
