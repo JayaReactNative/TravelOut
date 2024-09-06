@@ -21,15 +21,24 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Lint
-      run: npx eslint 
+    - name: Install CodePush CLI
+      run: npm install -g code-push-cli
 
+    - name: Lint
+      run: npx eslint .
+
+    - name: Print Environment Variables
+      run: |
+        echo "App Name: $APP_NAME"
+        echo "CodePush Access Key: $CODEPUSH_ACCESS_KEY"
 
     - name: Deploy to CodePush
       env:
         APP_NAME: 'YourAppName'
         CODEPUSH_ACCESS_KEY: ${{ secrets.CODEPUSH_ACCESS_KEY }}
-      run: npx code-push release-react $APP_NAME android -d Production -k $CODEPUSH_ACCESS_KEY
+      run: |
+        set -x
+        code-push release-react $APP_NAME android -d Production -k $CODEPUSH_ACCESS_KEY || exit 1
 
     - name: Notify Slack
       env:
