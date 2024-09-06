@@ -159,8 +159,7 @@ const TinderSwipeDemo = () => {
               isFirst={isFirst}
               swipe={swipe}
               {...dragHanlders}
-            >
-            </TinderCard>
+             />
           );
         })
         .reverse()}

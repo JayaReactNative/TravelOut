@@ -12,7 +12,7 @@ const NavigationScreen = () => {
       <Stack.Navigator initialRouteName="Home_screen">
         <Stack.Screen name="DashBoard" component={DashBoard} options={{ headerShown: false }} />
         <Stack.Screen name="Home_screen" component={HomeScreen} options={{ headerShown: false }} />
-     
+
       </Stack.Navigator>
     </NavigationContainer>
   );

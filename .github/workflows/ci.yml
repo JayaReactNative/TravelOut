@@ -24,13 +24,11 @@ jobs:
     - name: Install CodePush CLI
       run: npm install -g code-push-cli
 
+    - name: Print ESLint Version
+      run: npx eslint --version
+
     - name: Lint
       run: npx eslint .
-
-    - name: Print Environment Variables
-      run: |
-        echo "App Name: $APP_NAME"
-        echo "CodePush Access Key: $CODEPUSH_ACCESS_KEY"
 
     - name: Deploy to CodePush
       env:

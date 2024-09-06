@@ -41,7 +41,7 @@ const TinderCard = ({item, isFirst, swipe, ...rest}) => {
     outputRange: [1, 0],
     extrapolate: 'clamp',
   });
-  
+
 
   const renderChoice = useCallback(
     () => (
