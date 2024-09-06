@@ -25,7 +25,7 @@ jobs:
       run: npx eslint 
 
 
-       - name: Deploy to CodePush
+    - name: Deploy to CodePush
       env:
         APP_NAME: 'YourAppName'
         CODEPUSH_ACCESS_KEY: ${{ secrets.CODEPUSH_ACCESS_KEY }}
