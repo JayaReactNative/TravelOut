@@ -27,6 +27,9 @@ jobs:
     - name: Print ESLint Version
       run: npx eslint --version
 
+    - name: Print ESLint Configuration
+      run: npx eslint --print-config .eslintrc.js
+
     - name: Lint
       run: npx eslint .
 

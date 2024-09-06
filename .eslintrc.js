@@ -1,13 +1,6 @@
-// module.exports = {
-//   root: true,
-//   extends: '@react-native',
-// };
-
 module.exports = {
   env: {
-    jest: true,  // Enable Jest globals
-    browser: true,
-    node: true,
+    jest: true,  // Enables Jest globals
   },
   extends: [
     'eslint:recommended',
@@ -15,6 +8,14 @@ module.exports = {
     '@react-native'
   ],
   plugins: ['react', 'jest'],
+  overrides: [
+    {
+      files: ['*.test.js', '*.spec.js'],
+      env: {
+        jest: true,
+      },
+    },
+  ],
   rules: {
     // Add any custom rules here
   },
@@ -24,5 +25,3 @@ module.exports = {
     },
   },
 };
-
-
