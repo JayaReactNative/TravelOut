@@ -8,7 +8,6 @@ import {
   StyleSheet,
 } from 'react-native';
 import React, {useCallback, useEffect, useRef, useState} from 'react';
-import HomePageItem from '../screen/HomeScreen/HomePageItem';
 import TinderCard from './TinderCard';
 
 const TinderSwipeDemo = () => {
